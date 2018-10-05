@@ -2,3 +2,7 @@ language: java
 jdk:
 - oraclejdk8
 script: mvn clean verify
+deploy:
+  provider: heroku
+  api_key:
+    "a472471d-5baa-41e6-96b5-46b2a109c6cb"
