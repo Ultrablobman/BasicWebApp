@@ -20,6 +20,14 @@ public class QueryProcessor {
                 int secondInt = Integer.parseInt(secondStr);
                 return firstInt + secondInt + "";
             }
+            if (lcase.contains("multiplied")) {
+                String[] parts = lcase.split("multiplied");
+                String firstStr = parts[0].replaceAll("\\D+", "");
+                String secondStr = parts[1].replaceAll("\\D+", "");
+                int firstInt = Integer.parseInt(firstStr);
+                int secondInt = Integer.parseInt(secondStr);
+                return firstInt * secondInt + "";
+            }
         }
         return "";
     }
