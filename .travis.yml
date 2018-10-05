@@ -6,3 +6,4 @@ deploy:
   provider: heroku
   api_key:
     "a472471d-5baa-41e6-96b5-46b2a109c6cb"
+  app: horse-battery-68
